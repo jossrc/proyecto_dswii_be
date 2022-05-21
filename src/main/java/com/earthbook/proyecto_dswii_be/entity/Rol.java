@@ -1,4 +1,4 @@
-package com.sysparking.proyecto_dswii_be.entity;
+package com.earthbook.proyecto_dswii_be.entity;
 
 import lombok.Getter;
 import lombok.Setter;

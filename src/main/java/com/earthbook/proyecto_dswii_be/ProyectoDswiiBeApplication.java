@@ -1,4 +1,4 @@
-package com.sysparking.proyecto_dswii_be;
+package com.earthbook.proyecto_dswii_be;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

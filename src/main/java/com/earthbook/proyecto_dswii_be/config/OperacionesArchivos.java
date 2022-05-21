@@ -1,4 +1,4 @@
-package com.sysparking.proyecto_dswii_be.config;
+package com.earthbook.proyecto_dswii_be.config;
 
 public interface OperacionesArchivos {
 

@@ -1,7 +1,7 @@
-package com.sysparking.proyecto_dswii_be.util;
+package com.earthbook.proyecto_dswii_be.util;
 
+import com.earthbook.proyecto_dswii_be.config.OperacionesArchivos;
 import com.google.gson.Gson;
-import com.sysparking.proyecto_dswii_be.config.OperacionesArchivos;
 
 import java.io.BufferedWriter;
 import java.io.File;

@@ -1,7 +1,7 @@
-package com.sysparking.proyecto_dswii_be.controller;
+package com.earthbook.proyecto_dswii_be.controller;
 
-import com.sysparking.proyecto_dswii_be.entity.Rol;
-import com.sysparking.proyecto_dswii_be.service.RolService;
+import com.earthbook.proyecto_dswii_be.entity.Rol;
+import com.earthbook.proyecto_dswii_be.service.RolService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 
-//@CrossOrigin(origins = AppSettings.URL_CROSS_ORIGIN)
 @Controller
 @RequestMapping("/api/roles")
 public class RolController {

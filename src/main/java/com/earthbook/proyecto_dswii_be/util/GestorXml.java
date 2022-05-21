@@ -1,6 +1,7 @@
-package com.sysparking.proyecto_dswii_be.util;
+package com.earthbook.proyecto_dswii_be.util;
 
-import edu.cibertec.config.OperacionesArchivos;
+import com.earthbook.proyecto_dswii_be.config.OperacionesArchivos;
+
 import javax.xml.bind.JAXBContext;
 
 import javax.xml.bind.Marshaller;

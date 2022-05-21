@@ -1,7 +1,8 @@
-package com.sysparking.proyecto_dswii_be.service;
+package com.earthbook.proyecto_dswii_be.service;
 
-import com.postales.entity.Rol;
-import com.postales.repository.RolRepository;
+
+import com.earthbook.proyecto_dswii_be.entity.Rol;
+import com.earthbook.proyecto_dswii_be.repository.RolRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

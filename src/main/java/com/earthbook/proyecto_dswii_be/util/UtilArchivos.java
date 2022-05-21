@@ -1,4 +1,4 @@
-package com.sysparking.proyecto_dswii_be.util;
+package com.earthbook.proyecto_dswii_be.util;
 
 
 import java.io.File;
