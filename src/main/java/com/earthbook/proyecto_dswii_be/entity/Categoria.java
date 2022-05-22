@@ -9,8 +9,8 @@ import java.io.Serializable;
 @Entity
 @Getter
 @Setter
-@Table(name = "ROL")
-public class Rol implements Serializable {
+@Table(name = "CATEGORIA")
+public class Categoria implements Serializable {
 
     /**
 	 * 
@@ -21,5 +21,5 @@ public class Rol implements Serializable {
     private int id;
     private String nombre;
     private String descripcion;
-
+    private String imagen;
 }
