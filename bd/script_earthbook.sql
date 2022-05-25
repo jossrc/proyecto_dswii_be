@@ -378,3 +378,39 @@ INSERT INTO AUTOR (nombre_completo, biografia,id_pais) VALUES ('SEISHI KISHIMOTO
 INSERT INTO AUTOR (nombre_completo, biografia,id_pais) VALUES ('JIE ZHANG', 'Es un novelista y cuentista china. Nació en 1986 en Pekin, China',3);
 INSERT INTO AUTOR (nombre_completo, biografia,id_pais) VALUES ('MOLDES DIEGO', 'Es un escritor español, ensayista, novelista, crítico e historiador de cine. Nació en 1977',4);
 INSERT INTO AUTOR (nombre_completo, biografia,id_pais) VALUES ('RICARDO PALMA', 'Fue un escritor romantico, costumbrista, tradicionalista, periodista y politico peruano. Nacio en 1833',5);
+
+-- EDITORIALES
+INSERT INTO EDITORIAL (nombre,descripcion) VALUES ('Grupo Editorial Caja Negra','libros infantiles');
+INSERT INTO EDITORIAL (nombre,descripcion) VALUES ('Editorial Ambar','libros de drama y terror');
+INSERT INTO EDITORIAL (nombre,descripcion) VALUES ('Editorial Futura','editorial de libros de ciencia ficcion');
+INSERT INTO EDITORIAL (nombre,descripcion) VALUES ('Editorial Macro','editorial mayorista de libros en general');
+INSERT INTO EDITORIAL (nombre,descripcion) VALUES ('Editorial María Trinidad','editorial parroquiana');
+
+-- LIBROS
+INSERT INTO LIBRO (ISBN,SKU,TITULO,DESCRIPCION,PAGINAS,IMAGEN,ID_AUTOR,ID_EDITORIAL,ID_CATEGORIA)
+VALUES ('9786124017032','9786124017032','LIMA CIUDAD DE REYES - CITY OF KING','Hayuna Lima que no cambia. Rica, sobria e impresionante. Una Lima que, a pesar del tiempo, vive como en los valses, olorosa y señorial. Vestigios de una ciudad gobernada por virreyes y señoríos llegan hasta nuestro tiempo para hablarnos de un pasado glorioso que se fue.',120,
+'https://res.cloudinary.com/dfuuywyk9/image/upload/v1636815303/DAWI/lima-ciudad-reyes-city-kings-9786124017032-libro-ca01_gifowd.jpg',1,1,1);
+INSERT INTO LIBRO (ISBN,SKU,TITULO,DESCRIPCION,PAGINAS,IMAGEN,ID_AUTOR,ID_EDITORIAL,ID_CATEGORIA)
+VALUES ('9786124681103','9786124681103','HERNÁN PAZOS. PINTURAS 1980-2007','-',56,
+'https://res.cloudinary.com/dfuuywyk9/image/upload/v1636815303/DAWI/hernan-pazos-pinturas-1980-2007-9786124681103-libro-ca01_kekgdl.jpg',2,1,1);
+INSERT INTO LIBRO (ISBN,SKU,TITULO,DESCRIPCION,PAGINAS,IMAGEN,ID_AUTOR,ID_EDITORIAL,ID_CATEGORIA)
+VALUES ('9788433979810','9788433979810','SON COSAS QUE PASAN','París, 1945. En la iglesia de Saint-Pierre-de-Chaillot, ubicada en uno de los barrios más elegantes de la ciudad, se celebra un funeral. La difunta es la princesa Natalie de Lusignan, duquesa de Sorrente, que ha fallecido demasiado joven.',345,
+'https://res.cloudinary.com/dfuuywyk9/image/upload/v1636816084/DAWI/cosas-pasan-9788433979810-libro-ca01_bvtxih.jpg',4,1,3);
+INSERT INTO LIBRO (ISBN,SKU,TITULO,DESCRIPCION,PAGINAS,IMAGEN,ID_AUTOR,ID_EDITORIAL,ID_CATEGORIA)
+VALUES ('9788417179052','9788417179052','YOUR NAME 1','El encuentro de dos jóvenes desencontrados. Nos situamos en Japón, un mes antes de la llegada de un cometa que pasa una vez cada mil años. Mitsuha, una estudiante de tercer año que vive en un pueblo en lo profundo de las montañas, pasa sus días con melancolía. ',65,
+'https://res.cloudinary.com/dfuuywyk9/image/upload/v1636816478/DAWI/your-name-1-9788417179052-libro-ca01_ae7xj2.jpg',4,1,5);
+INSERT INTO LIBRO (ISBN,SKU,TITULO,DESCRIPCION,PAGINAS,IMAGEN,ID_AUTOR,ID_EDITORIAL,ID_CATEGORIA)
+VALUES ('9786075284545','9786075284545','ATAQUE DE LOS TITANES BEFORE THE FALL 08','Sharle espera en el taller el regreso de Kuklo, quien fue a Shiganshina a probar el nuevo modelo del dispositivo. Sin embargo, aunque llegó el día en que estaba programado su regreso, él no apareció. ',56,
+'https://res.cloudinary.com/dfuuywyk9/image/upload/v1636816425/DAWI/ataque-titanes-before-the-fall-08-9786075284545-libro-ca01_bmg3cx.jpg',5,1,5);
+INSERT INTO LIBRO (ISBN,SKU,TITULO,DESCRIPCION,PAGINAS,IMAGEN,ID_AUTOR,ID_EDITORIAL,ID_CATEGORIA)
+VALUES ('9788497593793','9788497593793','IT','Quién o qué mutila y mata a los niños de un pequeño pueblo norteamericano? ¿Por qué llega cíclicamente el horror a Derry en forma de un payaso siniestro que va sembrando la destrucción a su paso? Esto es lo que se proponen averiguar los protagonistas de esta novela. ',76,
+'https://res.cloudinary.com/dfuuywyk9/image/upload/v1636816983/DAWI/it-9788497593793-libro-ca01_blrziy.jpg',2,1,7);
+INSERT INTO LIBRO (ISBN,SKU,TITULO,DESCRIPCION,PAGINAS,IMAGEN,ID_AUTOR,ID_EDITORIAL,ID_CATEGORIA)
+VALUES ('9788492892884','9788492892884','CUENTOS DE TERROR','No nos cabe la menor duda que, durante la lectura de estas páginas, verá cómo su adrenalina sube por momentos y cómo le invade un inmenso placer después de cada escena terrorífica, porque en el libro que tiene usted en sus manos están contenidas las historias más espeluznantes de los mejores maestros del género de todos los tiempos.',87,
+'https://res.cloudinary.com/dfuuywyk9/image/upload/v1636816983/DAWI/cuentos-terror-9788492892884-libro-ca01_l4z9da.jpg',3,1,7);
+INSERT INTO LIBRO (ISBN,SKU,TITULO,DESCRIPCION,PAGINAS,IMAGEN,ID_AUTOR,ID_EDITORIAL,ID_CATEGORIA)
+VALUES ('9786073142557','9786073142557','JUEGO DE TRONOS PARA LOS NEGOCIOS','Juego de tronos para los negocios retoma cinco estrategias del universo creado por George R. R. Martin que te convertirán en el rey de tu propia empre…',32,
+'https://res.cloudinary.com/dfuuywyk9/image/upload/v1636817383/DAWI/juego-tronos-para-negocios-9786073142557-libro-ca01_e3czjw.jpg',2,1,9);
+INSERT INTO LIBRO (ISBN,SKU,TITULO,DESCRIPCION,PAGINAS,IMAGEN,ID_AUTOR,ID_EDITORIAL,ID_CATEGORIA)
+VALUES ('9786077444008','9786077444008','PLAN ESTRATÉGICO DE NEGOCIOS','En este libro el autor explica el contenido de un plan de negocios estratégico, base para ser tomado en cuenta por todo emprendedor de negocios o para empresas ya en marcha que buscan emprender otras líneas de producto o servicios.',52,
+'https://res.cloudinary.com/dfuuywyk9/image/upload/v1636817374/DAWI/plan-estrategico-negocios-9786077444008-libro-ca01_eje7up.jpg',3,1,9);
