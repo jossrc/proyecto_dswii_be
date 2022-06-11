@@ -4,6 +4,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.earthbook.proyecto_dswii_be.jpa.entity.UsuarioJPA;
 
-public interface UsuarioRepository extends JpaRepository<UsuarioJPA, Integer> {
+import java.io.Serializable;
+
+public interface UsuarioRepository extends JpaRepository<UsuarioJPA, Serializable> {
 
 }
