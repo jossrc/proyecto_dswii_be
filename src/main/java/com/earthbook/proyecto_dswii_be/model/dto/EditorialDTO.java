@@ -1,47 +1,46 @@
-package com.earthbook.proyecto_dswii_be.jpa.entity;
+package com.earthbook.proyecto_dswii_be.model.dto;
 
 import java.io.Serializable;
 
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
-import com.earthbook.proyecto_dswii_be.model.dto.EditorialDTO;
+import com.earthbook.proyecto_dswii_be.jpa.entity.EditorialJPA;
 
 import lombok.Getter;
 import lombok.Setter;
 
-@Entity
 @Getter
 @Setter
-@Table(name = "editorial")
-public class EditorialJPA implements Serializable{
+public class EditorialDTO implements Serializable{
+
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
 	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String nombre;
 	private String descripcion;
 	
-	public EditorialJPA() {
-		
+	public EditorialDTO() {
 	}
 
-	public EditorialJPA(int id, String nombre, String descripcion) {
+	public EditorialDTO(int id, String nombre, String descripcion) {
+		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.descripcion = descripcion;
 	}
 	
-	public EditorialJPA(EditorialDTO edi) {
+	public EditorialDTO(EditorialJPA edi) {
 		this.id = edi.getId();
 		this.nombre = edi.getNombre();
 		this.descripcion = edi.getDescripcion();
+		
 	}
 	
 }
