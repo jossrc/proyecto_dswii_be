@@ -1,4 +1,4 @@
-package com.earthbook.proyecto_dswii_be.entity;
+package com.earthbook.proyecto_dswii_be.jpa.entity;
 
 import java.io.Serializable;
 
@@ -15,7 +15,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Table(name = "libro")
-public class Libro implements Serializable{
+public class LibroJPA implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;

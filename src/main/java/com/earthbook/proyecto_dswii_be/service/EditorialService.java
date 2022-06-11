@@ -2,9 +2,9 @@ package com.earthbook.proyecto_dswii_be.service;
 
 import java.util.List;
 
-import com.earthbook.proyecto_dswii_be.entity.Editorial;
+import com.earthbook.proyecto_dswii_be.jpa.entity.EditorialJPA;
 
 public interface EditorialService {
-	public List<Editorial> listar();
+	public List<EditorialJPA> listar();
 	
 }

@@ -1,4 +1,4 @@
-package com.earthbook.proyecto_dswii_be.entity;
+package com.earthbook.proyecto_dswii_be.jpa.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -10,7 +10,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Table(name = "USUARIO")
-public class Usuario implements Serializable {
+public class UsuarioJPA implements Serializable {
 
 	/**
 	 * 

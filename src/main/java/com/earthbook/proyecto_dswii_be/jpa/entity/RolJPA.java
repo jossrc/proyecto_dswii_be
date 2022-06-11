@@ -1,4 +1,4 @@
-package com.earthbook.proyecto_dswii_be.entity;
+package com.earthbook.proyecto_dswii_be.jpa.entity;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -9,8 +9,8 @@ import java.io.Serializable;
 @Entity
 @Getter
 @Setter
-@Table(name = "CATEGORIA")
-public class Categoria implements Serializable {
+@Table(name = "ROL")
+public class RolJPA implements Serializable {
 
     /**
 	 * 
@@ -21,5 +21,5 @@ public class Categoria implements Serializable {
     private int id;
     private String nombre;
     private String descripcion;
-    private String imagen;
+
 }
