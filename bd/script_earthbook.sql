@@ -1,4 +1,4 @@
- DROP DATABASE IF EXISTS earthbook;
+DROP DATABASE IF EXISTS earthbook;
 CREATE DATABASE earthbook;
 USE earthbook;
 
