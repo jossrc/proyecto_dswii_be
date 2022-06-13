@@ -6,15 +6,15 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import com.earthbook.proyecto_dswii_be.jpa.entity.EditorialJPA;
+import com.earthbook.proyecto_dswii_be.jpa.entity.PaisJPA;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class EditorialDTO implements Serializable{
-
+public class PaisDTO implements Serializable{
+	
 	/**
 	 * 
 	 */
@@ -24,23 +24,19 @@ public class EditorialDTO implements Serializable{
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String nombre;
-	private String descripcion;
 	
-	public EditorialDTO() {
+	public PaisDTO() {
 	}
-
-	public EditorialDTO(int id, String nombre, String descripcion) {
-		super();
+	
+	public PaisDTO(int id, String nombre) {
 		this.id = id;
 		this.nombre = nombre;
-		this.descripcion = descripcion;
 	}
 	
-	public EditorialDTO(EditorialJPA edi) {
-		this.id = edi.getId();
-		this.nombre = edi.getNombre();
-		this.descripcion = edi.getDescripcion();
-		
+	public PaisDTO(PaisJPA paisDTO) {
+		this.id = paisDTO.getId();
+		this.nombre = paisDTO.getNombre();
 	}
 	
+
 }
