@@ -17,19 +17,18 @@ import com.earthbook.proyecto_dswii_be.model.dto.PaisDTO;
 public class PaisServiceImpl implements PaisService {
 
 	@Autowired
-	@Qualifier("repositorioPais")
-	private PaisRepository repo;
-
-	@Autowired
-	@Qualifier("convertidorPais")
-	private convertidorPais conv;
-
+    @Qualifier("repositorioPais")
+    private PaisRepository repositorio;
+    
+    @Autowired
+    @Qualifier("convertidorPais")
+    private convertidorPais convertidor;
+	
 	@Override
 	public List<PaisDTO> listar() {
+		List<PaisJPA> pais = repositorio.findAll();
 
-		List<PaisJPA> lib = repo.findAll();
-
-		return conv.convertirLista(lib);
+		return convertidor.convertirLista(pais);
 	}
 
 }
