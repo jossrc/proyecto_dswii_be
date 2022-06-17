@@ -14,7 +14,11 @@ import lombok.Setter;
 @Getter
 @Setter
 public class PaisDTO implements Serializable{
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> master
 	/**
 	 * 
 	 */
@@ -27,12 +31,19 @@ public class PaisDTO implements Serializable{
 	
 	public PaisDTO() {
 	}
+<<<<<<< HEAD
 	
 	public PaisDTO(int id, String nombre) {
+=======
+
+	public PaisDTO(int id, String nombre) {
+		super();
+>>>>>>> master
 		this.id = id;
 		this.nombre = nombre;
 	}
 	
+<<<<<<< HEAD
 	public PaisDTO(PaisJPA paisDTO) {
 		this.id = paisDTO.getId();
 		this.nombre = paisDTO.getNombre();
@@ -40,3 +51,11 @@ public class PaisDTO implements Serializable{
 	
 
 }
+=======
+	public PaisDTO(PaisJPA pais) {
+		this.id = pais.getId();
+		this.nombre = pais.getNombre();
+	}
+
+}
+>>>>>>> master

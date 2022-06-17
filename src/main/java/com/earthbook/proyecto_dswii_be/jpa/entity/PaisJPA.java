@@ -17,29 +17,30 @@ import lombok.Setter;
 @Getter
 @Setter
 @Table(name = "PAIS")
-public class PaisJPA implements Serializable {
+public class PaisJPA implements Serializable{
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	private String nombre;
-
+    private String nombre;
+    
 	public PaisJPA() {
 	}
 
 	public PaisJPA(int id, String nombre) {
+		super();
 		this.id = id;
 		this.nombre = nombre;
 	}
-
+	
 	public PaisJPA(PaisDTO pais) {
 		this.id = pais.getId();
 		this.nombre = pais.getNombre();
-
 	}
 
 }
