@@ -41,6 +41,6 @@ public class CategoriaJPA implements Serializable {
 		this.id = cate.getId();
 		this.nombre = cate.getNombre();
 		this.descripcion = cate.getDescripcion();
-		this.imagen = cate.getDescripcion();
+		this.imagen = cate.getImagen();
 	}
 }

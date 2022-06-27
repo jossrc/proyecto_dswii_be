@@ -61,7 +61,7 @@ public class CategoriaRestController {
 		System.out.println("ini: actualizarCategoria()");
 
 		boolean flag = service.actualizar(categoria);
-
+System.out.println(categoria.getImagen());
 		if (flag) {
 			return new ResponseEntity<>(HttpStatus.OK);
 		} else {
@@ -98,7 +98,7 @@ public class CategoriaRestController {
 	@GetMapping("/obtener/{id}")
 	public CategoriaDTO obtenerCategoria(@PathVariable("id") int id) {
 		System.out.println("ini: obtenerCategoria()");
-
+	
 		return service.categoriaPorId(id);
 	}
 
