@@ -21,7 +21,7 @@ public class UsuarioJPA implements Serializable {
 	public UsuarioJPA() {
 	}
 
-	public UsuarioJPA(int id, String nombres, String apellidos, String direccion, String email, String password, int estado, String imagen, RolJPA rol, int id_pais) {
+	public UsuarioJPA(int id, String nombres, String apellidos, String direccion, String email, String password, int estado, String imagen, RolJPA rol, PaisJPA pais) {
 		this.id = id;
 		this.nombres = nombres;
 		this.apellidos = apellidos;
@@ -31,7 +31,7 @@ public class UsuarioJPA implements Serializable {
 		this.estado = estado;
 		this.imagen = imagen;
 		this.rol = rol;
-		this.id_pais = id_pais;
+		this.pais = pais;
 	}
 
 	public UsuarioJPA(UsuarioDTO dto) {
@@ -44,7 +44,7 @@ public class UsuarioJPA implements Serializable {
 		this.estado = dto.getEstado();
 		this.imagen = dto.getImagen();
 		this.rol = new RolJPA(dto.getRol());
-		this.id_pais = dto.getId_pais();
+		this.pais = new PaisJPA(dto.getPais());
 	}
 
 	@Id
@@ -62,6 +62,10 @@ public class UsuarioJPA implements Serializable {
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "id_rol")
 	private RolJPA rol;
-	private int id_pais;	
+	
+	@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "id_pais")
+	private PaisJPA pais;	
 
 }
