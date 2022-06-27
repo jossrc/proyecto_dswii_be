@@ -37,7 +37,7 @@ public class CategoriaRestController {
 	// endpoint: http://localhost:8090/api/categorias/agregar
 	@PostMapping("/agregar")
 	public ResponseEntity<?> agregarCategoria(@RequestBody CategoriaDTO categoria) {
-		System.out.println("ini: insertarPokemon()");
+		System.out.println("ini: agregarCategoria()");
 
 		boolean flag = service.crear(categoria);
 
