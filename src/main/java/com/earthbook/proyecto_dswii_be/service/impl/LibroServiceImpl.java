@@ -92,4 +92,12 @@ public class LibroServiceImpl implements LibroService {
 		}
 	}
 
+	@Override
+	public List<LibroDTO> listarPorAutorCategoria(int idAutor, int idCategoria) {
+
+		List<LibroJPA> lib = repo.listarLibrosPorAutorCategoria(idAutor, idCategoria);
+
+		return conv.convertirLista(lib);
+	}
+
 }
