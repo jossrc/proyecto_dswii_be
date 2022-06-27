@@ -15,4 +15,6 @@ public interface LibroService {
 	public boolean update(LibroDTO libro);
 
 	public boolean delete(int id);
+	
+	public List<LibroDTO> listarPorAutorCategoria(int idAutor, int idCategoria);
 }

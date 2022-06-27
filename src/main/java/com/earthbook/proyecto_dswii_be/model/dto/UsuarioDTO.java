@@ -16,7 +16,7 @@ public class UsuarioDTO implements Serializable {
     public UsuarioDTO() {
     }
 
-    public UsuarioDTO(int id, String nombres, String apellidos, String direccion, String email, String password, int estado, String imagen, RolDTO rol, int id_pais) {
+    public UsuarioDTO(int id, String nombres, String apellidos, String direccion, String email, String password, int estado, String imagen, RolDTO rol, PaisDTO pais) {
         this.id = id;
         this.nombres = nombres;
         this.apellidos = apellidos;
@@ -26,7 +26,7 @@ public class UsuarioDTO implements Serializable {
         this.estado = estado;
         this.imagen = imagen;
         this.rol = rol;
-        this.id_pais = id_pais;
+        this.pais = pais;
     }
 
     public UsuarioDTO(UsuarioJPA jpa) {
@@ -39,7 +39,7 @@ public class UsuarioDTO implements Serializable {
         this.estado = jpa.getEstado();
         this.imagen = jpa.getImagen();
         this.rol = new RolDTO(jpa.getRol());
-        this.id_pais = jpa.getId_pais();
+        this.pais = new PaisDTO(jpa.getPais());
     }
 
     private int id;
@@ -51,6 +51,6 @@ public class UsuarioDTO implements Serializable {
     private int estado;
     private String imagen;
     private RolDTO rol;
-    private int id_pais;
+    private PaisDTO pais;
 
 }

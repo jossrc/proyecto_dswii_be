@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.earthbook.proyecto_dswii_be.model.dto.LibroDTO;
 import com.earthbook.proyecto_dswii_be.service.LibroService;
@@ -31,6 +32,13 @@ public class LibroRestController {
 
 		return service.listar();
 	}
+	
+	@GetMapping("/listar/filtros")
+	public List<LibroDTO> listarTodoOPorFiltros(
+            @RequestParam(name = "autorId", required = false, defaultValue = "-1") int autorId,
+            @RequestParam(name = "categoriaId", required = false, defaultValue = "-1") int  categoriaId){
+            	return service.listarPorAutorCategoria(autorId, categoriaId);
+    }
 
 	@GetMapping("/obtener/{id}")
 	public LibroDTO libroId(@PathVariable("id") int id) {
